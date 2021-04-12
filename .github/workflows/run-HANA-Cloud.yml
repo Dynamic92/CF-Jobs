@@ -19,4 +19,4 @@ jobs:
           cf_password: ${{secrets.CF_PASSWORD}}
           cf_org: 3ff7e55dtrial
           cf_space: dev
-          command: apps | grep started | awk {'print $1}{system ("cf stop " $1)}'
+          command: apps | grep started | awk {'print $1}{system ("cf start " $1)}'
